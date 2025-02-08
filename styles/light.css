@@ -1,16 +1,153 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --accent-color: #FF8DCB;
+  --title-text-color: #FFC2E6;
+  --title-decor-color: #353430;
+  --footer-title-shadow: #FF0070;
+  --main-card-title-text-color: #353430;
+  --title-decor-font-weight: 700;
+  --title-decor-line-height: 23.4px;
+  --title-decor-font-size: 18px;
+  --accent-font: 'IBM Plex Mono', sans-serif;
+  --background-image: url("../images/cover-image-light.png");
+  --main-recomendation-color: #353430;
+  --main-recomendation-font-weight: 400;
+  --heading-margin: 20px 0 10px;
+  --title-margin: 50px 0 20px;
+  --main-title-margin-bottom: 20px;
+  --light-theme-text-color: #353430;
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-light .rec-decorative {
+  display: none;
+}
+
+.theme-light .header__theme-menu-list {
+  color: var(--title-decor-color);
+}
+
+.theme-light .header__theme-menu-button:focus {
+  border: 1px solid var(--title-decor-color);
+  outline: none;
+}
+
+.theme-light .header__theme-menu-button:hover {
+  border-bottom: 0.5px solid var(--title-decor-color);
+}
+
+.theme-light .header__theme-menu-button:focus-visible {
+  border: 1px solid var(--title-decor-color);
+}
+
+.theme-light .header__theme-menu-button:active {
+  border: 1px solid var(--title-decor-color);
+}
+
+.theme-light .header__theme-menu-button_active {
+  border: 1px solid var(--title-decor-color);
+  pointer-events: none;
+}
+
+.theme-light .decorated-zone::before {
+  border: 1px solid var(--title-decor-color);
+  border-style: solid solid none none;
+}
+
+.theme-light .decorated-zone::after {
+  border: 1px solid var(--title-decor-color);
+  border-style: none none solid solid;
+}
+
+.theme-light .footer-decorated-zone::before {
+  border: 1px solid var(--title-decor-color);
+  border-style: solid solid none none;
+}
+
+.theme-light .footer-decorated-zone::after {
+  border: 1px solid var(--title-decor-color);
+  border-style: none none solid solid;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root { 
+    --accent-color: #FF8DCB;
+    --title-text-color: #FFC2E6;
+    --title-decor-color: #353430;
+    --footer-title-shadow: #FF0070;
+    --main-card-title-text-color: #353430;
+    --title-decor-font-weight: 700;
+    --title-decor-line-height: 23.4px;
+    --title-decor-font-size: 18px;
+    --accent-font: 'IBM Plex Mono', sans-serif;
+    --background-image: url("../images/cover-image-light.png");
+    --main-recomendation-color: #F1B2CE;
+    --main-recomendation-font-weight: 400;
+    --heading-margin: 20px 0 10px;
+    --title-margin: 50px 0 20px;
+    --main-title-margin-bottom: 20px;
+    --light-theme-text-color: #353430;
+  }
+
+  .theme-auto .rec-decorative {
+    display: none;
+  }
+
+  .main-card-title {
+    color: var(--main-card-title-text-color);
+  }
+  
+  .main-card-text {
+    color: var(--light-theme-text-color);
+  }
+
+  .theme-auto .rec-decorative {
+    display: none;
+  }
+  
+  .theme-auto .header__theme-menu-list {
+    color: var(--title-decor-color);
+  }
+  
+  .theme-auto .header__theme-menu-button:focus {
+    border: 1px solid var(--title-decor-color);
+    outline: none;
+  }
+  
+  .theme-auto .header__theme-menu-button:hover {
+    border-bottom: 0.5px solid var(--title-decor-color);
+  }
+  
+  .theme-auto .header__theme-menu-button:focus-visible {
+    border: 1px solid var(--title-decor-color);
+  }
+  
+  .theme-auto .header__theme-menu-button:active {
+    border: 1px solid var(--title-decor-color);
+  }
+  
+  .theme-auto .header__theme-menu-button_active {
+    border: 1px solid var(--title-decor-color);
+    pointer-events: none;
+  }
+  
+  .theme-auto .decorated-zone::before {
+    border: 1px solid var(--title-decor-color);
+    border-style: solid solid none none;
+  }
+  
+  .theme-auto .decorated-zone::after {
+    border: 1px solid var(--title-decor-color);
+    border-style: none none solid solid;
+  }
+  
+  .theme-auto .footer-decorated-zone::before {
+    border: 1px solid var(--title-decor-color);
+    border-style: solid solid none none;
+  }
+  
+  .theme-auto .footer-decorated-zone::after {
+    border: 1px solid var(--title-decor-color);
+    border-style: none none solid solid;
+  }
 }
