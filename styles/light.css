@@ -70,6 +70,7 @@
 
 
 @media (prefers-color-scheme: light) {
+  
   :root { 
     --accent-color: #FF8DCB;
     --title-text-color: #FFC2E6;
@@ -99,10 +100,6 @@
   
   .main-card-text {
     color: var(--light-theme-text-color);
-  }
-
-  .theme-auto .rec-decorative {
-    display: none;
   }
   
   .theme-auto .header__theme-menu-list {
