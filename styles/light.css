@@ -67,11 +67,9 @@
   border-style: none none solid solid;
 }
 
-
-
 @media (prefers-color-scheme: light) {
   
-  :root { 
+  :root {
     --accent-color: #FF8DCB;
     --title-text-color: #FFC2E6;
     --title-decor-color: #353430;
@@ -82,7 +80,7 @@
     --title-decor-font-size: 18px;
     --accent-font: 'IBM Plex Mono', sans-serif;
     --background-image: url("../images/cover-image-light.png");
-    --main-recomendation-color: #F1B2CE;
+    --main-recomendation-color: #353430;
     --main-recomendation-font-weight: 400;
     --heading-margin: 20px 0 10px;
     --title-margin: 50px 0 20px;
@@ -147,4 +145,5 @@
     border: 1px solid var(--title-decor-color);
     border-style: none none solid solid;
   }
+
 }
