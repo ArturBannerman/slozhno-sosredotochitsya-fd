@@ -18,21 +18,13 @@
   --light-theme-text-color: #353430;
 }
 
-.theme-light .page {
-  background-image: var(--background-image);
-  background-color: var(--bg-color, #FFF1F7);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 @media (prefers-color-scheme: light) {
   
   :root {
     --accent-color: #FF8DCB;
     --title-text-color: #FFC2E6;
     --title-decor-color: #353430;
+    --bg-color: #FFF1F7;
     --footer-title-shadow: #FF0070;
     --main-card-title-text-color: #353430;
     --title-decor-font-weight: 700;
@@ -48,4 +40,9 @@
     --light-theme-text-color: #353430;
   }
 
+  .theme-auto .rec-decorative {
+    display: none;
+  }
+  
 }
+
